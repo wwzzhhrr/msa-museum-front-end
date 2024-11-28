@@ -1,0 +1,58 @@
+.carouselContainer {
+  width: 100%;
+  height: 80vh;
+  top: 29px;
+  left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateX(-25deg) rotateZ(-17deg);
+  transform-style: preserve-3d;
+  perspective: 1200px;
+  user-select: none;
+  cursor: grab;
+  position: absolute;
+  z-index: 0;
+}
+
+.carouselImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -40px 0 0 -60px;
+  width: 124px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  transform-origin: 50% 50%;
+  border: 3px solid #EC5729;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.50);
+  transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+}
+
+.moonImage {
+  height: 100vh; /* 根据需要调整大小 */
+  position: absolute; /* 确保绝对定位 */
+  opacity: 1;
+  transform: rotateX(25deg) rotateZ(15deg);
+}
+
+.back{
+  display: flex;
+  align-items: center;
+  margin: 0 0 30px 30px;
+}
+.leftSide{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.leftButton{
+  color: white;
+}
